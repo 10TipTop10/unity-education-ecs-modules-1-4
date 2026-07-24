@@ -1,0 +1,32 @@
+# Unity: локальный кэш и временные файлы
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# Результаты сборки
+/[Bb]uild/
+/[Bb]uilds/
+
+# Visual Studio и Rider
+/.vs/
+/.idea/
+*.csproj
+*.sln
+*.slnx
+*.user
+*.userprefs
+*.tmp
+
+# Автоматически создаваемые вспомогательные файлы
+/.vsconfig
+
+# Локальные инструкции Codex
+/AGENTS.md
+/.agents/
+/.codex/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
