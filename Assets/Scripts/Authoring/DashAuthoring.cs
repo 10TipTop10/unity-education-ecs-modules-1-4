@@ -2,6 +2,6 @@ using UnityEngine;
 
 public class DashAuthoring : MonoBehaviour
 {
-    public float _dashDistance = 20f;
-    public float _dashDelay = 5f;
+    public float DashDistance = 20f;
+    public float DashDelay = 5f;
 }

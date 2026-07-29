@@ -7,8 +7,10 @@ public class BulletBaker : Baker<BulletAuthoring>
 
         AddComponent(entity, new BulletComponent
         {
-            bulletSpeed = authoring._bulletSpeed,
-            bulletLifetime = authoring._bulletLifetime
+            BulletSpeed = authoring.BulletSpeed,
+            BulletLifetime = authoring.BulletLifetime,
+            CollisionRadius = authoring.CollisionRadius,
+            CollisionMask = authoring.CollisionMask.value
         });
     }
 }

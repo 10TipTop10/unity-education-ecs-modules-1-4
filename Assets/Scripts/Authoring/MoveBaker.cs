@@ -8,7 +8,10 @@ public class MoveBaker : Baker<MoveAuthoring>
 
         AddComponent(entity, new MoveComponent
         {
-            _moveSpeed = authoring._moveSpeed
+            MoveSpeed = authoring.MoveSpeed,
+            BlockingMask = authoring.BlockingMask.value
         });
+        AddComponent(entity, new MoveRequestComponent());
+        
     }
 }

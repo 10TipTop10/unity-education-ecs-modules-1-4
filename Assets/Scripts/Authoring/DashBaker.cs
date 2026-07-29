@@ -8,8 +8,8 @@ public class DashBaker : Baker<DashAuthoring>
 
         AddComponent(entity, new DashComponent
         {
-            dashDistance = authoring._dashDistance,
-            dashDelay = authoring._dashDelay,
+            DashDistance = authoring.DashDistance,
+            DashDelay = authoring.DashDelay,
         });
     }
 }

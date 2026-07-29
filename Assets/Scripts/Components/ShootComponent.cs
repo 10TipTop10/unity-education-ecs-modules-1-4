@@ -4,5 +4,5 @@ public struct ShootComponent : IComponentData
 {
     public Entity ProjectilePrefab;
     public float ShootDelay;
-    public double nextShootTime;
+    public double NextShootTime;
 }

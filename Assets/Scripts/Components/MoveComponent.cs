@@ -2,5 +2,6 @@ using Unity.Entities;
 
 public struct MoveComponent : IComponentData
 {
-    public float _moveSpeed;
+    public float MoveSpeed;
+    public int BlockingMask;
 }
