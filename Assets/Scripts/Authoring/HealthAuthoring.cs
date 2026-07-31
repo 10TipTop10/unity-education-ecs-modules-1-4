@@ -2,5 +2,11 @@ using UnityEngine;
 
 public class HealthAuthoring : MonoBehaviour
 {
-    public int MaxHealth = 100;
+    public Settings settings;
+    [HideInInspector] public int MaxHealth;
+
+    private void Start()
+    {
+        MaxHealth = settings.HeroHealth;
+    }
 }
