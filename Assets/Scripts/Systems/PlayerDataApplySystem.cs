@@ -18,15 +18,11 @@ public partial class PlayerDataApplySystem : SystemBase
             RefRW<DashComponent>
             >().WithAll<UserInputComponent>())
         {
-            Debug.Log($"Значения до загрузки с сервера:\nЗдоровье: {health.ValueRO.CurrentHealth} / {health.ValueRO.MaxHealth}, Скорость: {move.ValueRO.MoveSpeed}, Дистанция рывка: {dash.ValueRO.DashDistance}");
-
             health.ValueRW.CurrentHealth = (int)math.round(CalculateScaledValue(health.ValueRO.CurrentHealth, health.ValueRO.MaxHealth, loadedData.MaxHealth));
             health.ValueRW.MaxHealth = loadedData.MaxHealth;
 
             move.ValueRW.MoveSpeed = loadedData.MoveSpeed;
             dash.ValueRW.DashDistance = loadedData.DashDistance;
-
-            Debug.Log($"Значения после загрузки с сервера:\nЗдоровье: {health.ValueRO.CurrentHealth} / {health.ValueRO.MaxHealth}, Скорость: {move.ValueRO.MoveSpeed}, Дистанция рывка: {dash.ValueRO.DashDistance}");
 
             dataApplied = true;
         }

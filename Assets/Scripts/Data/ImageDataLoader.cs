@@ -6,7 +6,6 @@ using System.Collections;
 public class ImageDataLoader : MonoBehaviour
 {
     [SerializeField] private string _downloadUrl;
-
     [SerializeField] private Image _loadImage;
 
     private void Start()

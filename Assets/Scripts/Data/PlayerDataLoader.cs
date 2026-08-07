@@ -50,7 +50,6 @@ public class PlayerDataLoader : MonoBehaviour
             yield return request.SendWebRequest();
             if (request.result != UnityWebRequest.Result.Success)
             {
-                Debug.LogError($"{request.error}");
                 yield break;
             }
 
@@ -61,7 +60,5 @@ public class PlayerDataLoader : MonoBehaviour
         if (loadedPlayerData == null) yield break;
 
         CreatePlayerDataUpdate(loadedPlayerData);
-
-        Debug.Log($"Чистые данные из PlayerData (Google docs). Здоровье:{loadedPlayerData.MaxHealth} Скорость:{loadedPlayerData.MoveSpeed} Дальность рывка:{loadedPlayerData.DashDistance}");
     }
 }
