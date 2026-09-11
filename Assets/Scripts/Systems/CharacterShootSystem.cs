@@ -3,6 +3,8 @@ using Unity.Transforms;
 using Unity.Mathematics;
 using Unity.Collections;
 
+[UpdateInGroup(typeof(SimulationSystemGroup))]
+[UpdateBefore(typeof(TransformSystemGroup))]
 public partial class CharacterShootSystem : SystemBase
 {
     protected override void OnCreate()

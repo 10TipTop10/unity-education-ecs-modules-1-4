@@ -7,7 +7,6 @@ public class PlayerEntityBridge : MonoBehaviour
 {
     private EntityManager _entityManager;
     private EntityQuery _entityQuery;
-
     private void Start()
     {
         var entityWorld = World.DefaultGameObjectInjectionWorld;
@@ -27,7 +26,7 @@ public class PlayerEntityBridge : MonoBehaviour
 
         _entityManager.SetComponentData(playerEntity, health);
 
-        Debug.Log($"Health: {health.CurrentHealth}");
+        //Debug.Log($"Health: {health.CurrentHealth}");
 
         return true;
     }
@@ -52,4 +51,5 @@ public class PlayerEntityBridge : MonoBehaviour
 
         return true;
     }
+
 }

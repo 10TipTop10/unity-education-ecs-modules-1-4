@@ -13,6 +13,6 @@ public class injectionTest : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log($"{_configLoader.HeroHealth}");
+        //Debug.Log($"{_configLoader.HeroHealth}");
     }
 }

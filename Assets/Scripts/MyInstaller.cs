@@ -19,31 +19,3 @@ public class MyInstaller : MonoInstaller
 
     }
 }
-
-//public class GreetMe
-//{
-//    public GreetMe(string message)
-//    {
-//        Debug.Log(message);
-//    }
-//}
-
-//public class Test1 : ITest
-//{
-//    public void Echo()
-//    {
-//        Debug.Log("Test 1");
-//    }
-//}
-//public class Test2 : ITest
-//{
-//    public void Echo()
-//    {
-//        Debug.Log("Test 2");
-//    }
-//}
-
-//public interface ITest
-//{
-//    void Echo();
-//}

@@ -317,7 +317,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b4ca892ff632c41a932ac6c6f03ffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeHealthAction
-  _amount: 25
+  _healEffectManager: {fileID: 0}
+  _amount: 20
 --- !u!114 &2965314321029286795
 MonoBehaviour:
   m_ObjectHideFlags: 0

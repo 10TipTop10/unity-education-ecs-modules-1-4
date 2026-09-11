@@ -27,11 +27,20 @@ public partial class BulletSystem : SystemBase
                     float3 reflectedDirection = math.reflect(direction, hit.normal);
                     float3 impactCenter = transform.ValueRO.Position + direction * hit.distance;
 
+                    if (BulletImpactManager.Instance != null)
+                    {
+                        BulletImpactManager.Instance.InstantiateRicochetEffect(hit.point, hit.normal);
+                    }
+
                     transform.ValueRW.Rotation = quaternion.LookRotationSafe(reflectedDirection, math.up());
                     transform.ValueRW.Position = impactCenter + (float3)hit.normal * 0.001f;
                 }
                 else
                 {
+                    if(BulletImpactManager.Instance != null)
+                    {
+                        BulletImpactManager.Instance.InstantiateHitEffect(hit.point, hit.normal);
+                    }
                     ecb.DestroyEntity(entity);
                     continue;
                 }
