@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/ISKRa/Scenes/ISKRaPrototype.unity
+    guid: d36818d29c5916d458fe201825741ca7
+  - enabled: 0
     path: Assets/Scenes/Module1Scene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
